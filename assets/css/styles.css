@@ -334,7 +334,8 @@ body.menu-open .nav__toggle-bar:nth-child(3) { transform: translateY(-7px) rotat
 .registro-section .container { position: relative; z-index: 1; }
 
 .gform-wrapper {
-    max-width: 700px;
+    width: 640px;
+    max-width: 100%;
     margin: 0 auto;
     background: var(--navy-mid);
     border: 1px solid rgba(13,158,110,.25);
@@ -351,8 +352,9 @@ body.menu-open .nav__toggle-bar:nth-child(3) { transform: translateY(-7px) rotat
     z-index: 2;
 }
 .gform-wrapper iframe {
-    width: 100%;
-    min-height: 1050px;
+    width: 640px;
+    max-width: 100%;
+    height: 786px;
     border: 0;
     display: block;
     background: transparent;
@@ -706,5 +708,5 @@ body.menu-open .nav__toggle-bar:nth-child(3) { transform: translateY(-7px) rotat
     .asesora__grid { grid-template-columns: 1fr; }
     .service-expanded__header { flex-direction: column; }
     .whatsapp-float { bottom: 1rem; right: 1rem; width: 50px; height: 50px; }
-    .gform-wrapper iframe { min-height: 920px; }
+    .gform-wrapper iframe { height: 786px; }
 }
