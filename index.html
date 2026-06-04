@@ -364,7 +364,26 @@
         </header>
 
         <div class="gform-wrapper">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbgBozn7oQSY19_V-fN3M69TrVtZi6xArNLtVC4bTdoLM77Q/viewform?embedded=true" width="640" height="786" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe
+            id="gform-iframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScbgBozn7oQSY19_V-fN3M69TrVtZi6xArNLtVC4bTdoLM77Q/viewform?embedded=true"
+            width="640"
+            height="786"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading…
+          </iframe>
+          <div class="gform-fallback" id="gform-fallback" hidden>
+            <p>El formulario no pudo cargarse en esta vista.</p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScbgBozn7oQSY19_V-fN3M69TrVtZi6xArNLtVC4bTdoLM77Q/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary">
+              Abrir formulario de registro
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -530,8 +549,8 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/573185822281" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-    <span aria-hidden="true">WhatsApp</span>
+  <a class="telegram-float" href="https://t.me/+573185822281" target="_blank" rel="noopener noreferrer" aria-label="Contactar por Telegram">
+    <span aria-hidden="true">Telegram</span>
   </a>
 
   <script src="assets/js/main.js"></script>

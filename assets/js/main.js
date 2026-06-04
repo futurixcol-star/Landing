@@ -1,6 +1,26 @@
 (function () {
     'use strict';
 
+    /* Google Form iframe fallback */
+    const gformIframe = document.getElementById('gform-iframe');
+    const gformFallback = document.getElementById('gform-fallback');
+    if (gformIframe && gformFallback) {
+        const showFallback = () => {
+            gformIframe.hidden = true;
+            gformFallback.hidden = false;
+        };
+        gformIframe.addEventListener('error', showFallback);
+        /* Timeout: si en 8 s el iframe sigue en blanco (0 de alto real), muestra el botón */
+        setTimeout(() => {
+            try {
+                const doc = gformIframe.contentDocument || gformIframe.contentWindow?.document;
+                if (!doc || doc.body?.innerHTML === '') showFallback();
+            } catch (_) {
+                /* Cross-origin blocked → el iframe cargó en dominio externo, es correcto */
+            }
+        }, 8000);
+    }
+
     /* Scroll reveal */
     const revealObserver = new IntersectionObserver(
         (entries) => {
