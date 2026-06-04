@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -47,11 +47,12 @@
           <li><a class="nav__link" href="nosotros.html">Nosotros</a></li>
           <li><a class="nav__link" href="inmuebles.html">Inmuebles</a></li>
           <li><a class="nav__link" href="blog.html">Blog</a></li>
+          <li><a class="nav__link" href="#registro">Registro</a></li>
           <li><a class="nav__link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
 
-      <a class="btn btn--primary nav__cta" href="contacto.html">Agenda tu cita</a>
+      <a class="btn btn--primary nav__cta" href="#registro">Regístrate gratis</a>
 
       <div class="mobile-menu" id="mobile-menu" hidden>
         <ul class="mobile-menu__links">
@@ -72,20 +73,30 @@
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="inmuebles.html">Inmuebles</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="#registro">Registro</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <a class="btn btn--primary btn--block" href="contacto.html">Agenda tu cita</a>
+        <a class="btn btn--primary btn--block" href="#registro">Regístrate gratis</a>
       </div>
     </nav>
   </header>
 
   <main id="contenido-principal">
 
+    <!-- ══════════════════════ HERO ══════════════════════ -->
     <section class="hero reveal" aria-labelledby="hero-title">
+      <!-- Orbes decorativos animados -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
       <div class="container hero__grid">
         <div class="hero__content">
           <span class="badge">Consultoría Financiera Inmobiliaria</span>
-          <h1 id="hero-title" class="hero__title">Crédito, vivienda y patrimonio en un solo lugar.</h1>
+          <h1 id="hero-title" class="hero__title">
+            Crédito, vivienda y<br>
+            <span class="gradient-text">patrimonio</span> en un solo lugar.
+          </h1>
           <p class="hero__subtitle">
             En <strong>Futurixcol</strong> acompañamos a familias y empresarios en Colombia con estrategias claras para financiar vivienda, optimizar deuda y construir patrimonio con confianza.
           </p>
@@ -104,7 +115,7 @@
             </li>
           </ul>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#contacto">Agenda tu cita</a>
+            <a class="btn btn--primary" href="#registro">Regístrate gratis</a>
             <a class="btn btn--outline" href="#servicios">Conoce nuestros servicios</a>
           </div>
         </div>
@@ -161,6 +172,7 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ DATA STRIP ══════════════════════ -->
     <section class="data-strip reveal" aria-label="Indicadores del mercado">
       <div class="container data-strip__grid">
         <article class="data-strip__item">
@@ -178,6 +190,7 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ SERVICIOS ══════════════════════ -->
     <section class="section reveal" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
         <header class="section__header">
@@ -238,6 +251,7 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ VALOR ══════════════════════ -->
     <section class="section section--alt reveal" aria-labelledby="valor-title">
       <div class="container valor__grid">
         <article class="card ratings-card">
@@ -264,11 +278,12 @@
             <li>Seguimiento hasta firma y desembolso</li>
             <li>Educación financiera para decisiones futuras</li>
           </ul>
-          <a class="btn btn--primary" href="#contacto">Quiero asesoría</a>
+          <a class="btn btn--primary" href="#registro">Quiero asesoría</a>
         </div>
       </div>
     </section>
 
+    <!-- ══════════════════════ HIGHLIGHTS ══════════════════════ -->
     <section class="section reveal" aria-labelledby="highlights-title">
       <div class="container">
         <header class="section__header">
@@ -310,6 +325,7 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ ASESORA ══════════════════════ -->
     <section class="section section--alt reveal" id="asesora" aria-labelledby="asesora-title">
       <div class="container asesora__grid">
         <div class="asesora__media">
@@ -333,6 +349,36 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ REGISTRO / GOOGLE FORM ══════════════════════ -->
+    <section class="section registro-section reveal" id="registro" aria-labelledby="registro-title">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Registro</span>
+          <h2 id="registro-title" class="section__title">
+            Da el primer paso hacia tu<br>
+            <span class="gradient-text">libertad financiera</span>
+          </h2>
+          <p class="section__lead">
+            Completa el formulario y un asesor de Futurixcol te contactará con un plan diseñado para tu situación.
+          </p>
+        </header>
+
+        <div class="gform-wrapper">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScbgBozn7oQSY19_V-fN3M69TrVtZi6xArNLtVC4bTdoLM77Q/viewform?embedded=true&hl=es"
+            width="100%"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Formulario de registro Futurixcol"
+            loading="lazy">
+            Cargando formulario…
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ ESLOGAN ══════════════════════ -->
     <section class="eslogan reveal" aria-label="Eslogan corporativo">
       <div class="container eslogan__inner">
         <p class="eslogan__quote">Financiamos tus sueños, construimos tu patrimonio.</p>
@@ -340,6 +386,7 @@
       </div>
     </section>
 
+    <!-- ══════════════════════ PRECIOS ══════════════════════ -->
     <section class="section reveal" id="precios" aria-labelledby="precios-title">
       <div class="container">
         <header class="section__header">
@@ -357,7 +404,7 @@
               <li>Revisión general de perfil</li>
               <li>Recomendación de siguiente paso</li>
             </ul>
-            <a class="btn btn--outline btn--block" href="#contacto">Solicitar orientación</a>
+            <a class="btn btn--outline btn--block" href="#registro">Solicitar orientación</a>
           </article>
           <article class="pricing-card pricing-card--featured">
             <span class="pricing-card__badge">Más solicitado</span>
@@ -370,12 +417,13 @@
               <li>Negociación y cierre del crédito</li>
               <li>Honorarios al éxito del proceso</li>
             </ul>
-            <a class="btn btn--primary btn--block" href="#contacto">Agenda tu cita</a>
+            <a class="btn btn--primary btn--block" href="#registro">Agenda tu cita</a>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ══════════════════════ FAQ ══════════════════════ -->
     <section class="section section--alt reveal" id="faq" aria-labelledby="faq-title">
       <div class="container container--narrow">
         <header class="section__header">
@@ -404,13 +452,14 @@
             <div class="faq-a"><p>Sí. Revisamos tu historial y diseñamos un plan para mejorar viabilidad antes de radicar.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" type="button">¿Cómo agendo una cita?</button>
-            <div class="faq-a"><p>Completa el formulario de contacto, llama al +57 318 582 2281 o escríbenos por WhatsApp para coordinar fecha y hora.</p></div>
+            <button class="faq-q" type="button">¿Cómo me registro?</button>
+            <div class="faq-a"><p>Completa el formulario de registro en esta misma página, llama al +57 318 582 2281 o escríbenos por WhatsApp para coordinar fecha y hora.</p></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ══════════════════════ CONTACTO ══════════════════════ -->
     <section class="section reveal" id="contacto" aria-labelledby="contacto-title">
       <div class="container contacto__grid">
         <div class="contacto__info">
@@ -474,6 +523,7 @@
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="inmuebles.html">Inmuebles</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="#registro">Registro</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
